@@ -3,7 +3,7 @@
 <!--Setting up the language for coding-->
 <html lang="en">
 
-<!--Creating the heading-->
+<!--Creating the heading of the html coding-->
 
 <head>
     <meta charset="UTF-8">
@@ -29,12 +29,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <!-- <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li> -->
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Dropdown
@@ -53,17 +48,54 @@
                         <a class="nav-link" href="csv_data.html" tabindex="-1" aria-disabled="true">Data</a>
                     </li>
                 </ul>
-                <!-- <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form> -->
             </div>
         </div>
     </nav>
     <!--Creating the rows and the columns for the container and then adding the necessary images-->
-
-
-
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="col-md-12">
+                    <h3>Summary: City Latitude vs. Chosen Weather Element </h3>
+                    <hr>
+                    <div class="thumbnail">
+                        <img class="img-thumbnail float-left" src="Resources/assets/images/Fig3.png" width="50%" alt="cloudiness">
+                    </div>
+                    <p>The objective of this project is to evaluate changes in weather as you get closer to the equator.</p>
+                    <p>To realize this objective, a data set was pulled from the OpenWeatherMap API on a range over 600 cities.</p>
+                    <p>The dataset was cleaned and using Matplotlib, different plots of the weather vs latitude were obtained.</p>
+                    <p>The following weather elements were included in the analysis: temperature, cloudiness, wind speed, and humidity. </p>
+                    <p>The source data and visualizations with their explanations are provided as well.</p>
+                </div>
+            </div>
+            <!--Creating the visualizations and the necessary adjustments-->
+            <div class="col-md-4">
+                <div class="col-md-12">
+                    <h3>Visualizations</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-3 col-md-6">
+                            <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" width="100%" alt="cloudiness"></a>
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" width="100%" alt="humidity"></a>
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href="temp.html"><img src="Resources/assets/images/Fig1.png" width="100%" alt="temperature"></a>
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" width="100%" alt="wind speed"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Generating Footer of the html coding-->
+    <footer class="page-footer font-small footer-dark">
+        <div class="footer-copyright text-center py-3">
+        </div>
+    </footer>
 </body>
 
 </html>
