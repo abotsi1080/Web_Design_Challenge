@@ -18,3 +18,84 @@
 </head>
 
 <!--Creating the body content of the html coding-->
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand text-white" href="index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="temperature.html">Temperature</a>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html" tabindex="-1" aria-disabled="true">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="csv_data.html" tabindex="-1" aria-disabled="true">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Creating the rows and the columns for the container and then adding the necessary images-->
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="col-md-12">
+                    <h3>Cloudiness: City Latitude vs. Cloudiness </h3>
+                    <hr>
+                    <div class="thumbnail">
+                        <img class="img-thumbnail float-left" src="Resources/assets/images/Fig3.png" width="50%" alt="cloudiness">
+                    </div>
+                    <p>The objective of this project is to evaluate changes in weather as you get closer to the equator.</p>
+                    <p>To realize this objective, a data set was pulled from the OpenWeatherMap API on a range over 600 cities.</p>
+                    <p>The dataset was cleaned and using Matplotlib, different plots of the weather vs latitude were obtained.</p>
+                    <p>The following weather elements were included in the analysis: temperature, cloudiness, wind speed, and humidity. </p>
+                    <p>The source data and visualizations with their explanations are provided as well.</p>
+                </div>
+            </div>
+            <!--Creating the visualizations and the necessary adjustments-->
+            <div class="col-md-4">
+                <div class="col-md-12">
+                    <h3>Visualizations</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-3 col-md-6">
+                            <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" width="100%" alt="cloudiness"></a>
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" width="100%" alt="humidity"></a>
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href="temp.html"><img src="Resources/assets/images/Fig1.png" width="100%" alt="temperature"></a>
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" width="100%" alt="wind speed"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Generating Footer of the html coding-->
+    <footer class="page-footer font-small footer-dark">
+        <div class="footer-copyright text-center py-3">
+        </div>
+    </footer>
+</body>
+
+</html>
