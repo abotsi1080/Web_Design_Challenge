@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Cloudiness</title>
+    <title>Comparison</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -52,50 +52,39 @@
         </div>
     </nav>
     <!--Creating the rows and the columns for the container and then adding the necessary images-->
-    <div class="container content">
+    <div class="container content bg-white">
+        <h3>Comparison: Latitude vs Chosen Weather Element</h3>
+        <hr>
+        <p>Click a plot to be taken to the landing page!</p>
         <div class="row">
-            <div class="col-md-8">
-                <div class="col-md-12">
-                    <h3>Cloudiness: City Latitude vs. Cloudiness </h3>
-                    <hr>
-                    <div class="thumbnail">
-                        <img class="img-thumbnail float-left" src="Resources/assets/images/Fig3.png" width="50%" alt="cloudiness">
-                    </div>
-                    <p>The graph of City Latitude vs. Cloudiness shows no concentration of cloudiness.</p>
-                    <p>Data points on cloudiness is seen to be scattered throughout different latitude.</p>
-                    <p>The graph certainly does not show any specific trend of cloudiness percentage in relation to latitude. </p>
-                    <p>The graph however shows no cloudiness data at latitude of -60 to -80 and 80 to 100 degrees. </p>
-                    <p>That prodivides a summary of this graph. I hope that was helpful.</p>
-                </div>
+            <div class="col-md-6">
+                <h3 class="text-center">vs. Cloudiness</h3>
+                <a href="cloudiness.html"><img width="100%" src="Resources/assets/images/Fig3.png"></a>
             </div>
-            <!--Creating the visualizations and the necessary adjustments-->
-            <div class="col-md-4">
-                <div class="col-md-12">
-                    <h3>Visualizations</h3>
-                    <hr>
-                    <div class="row">
-                        <div class="col-3 col-md-6">
-                            <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" width="100%" alt="cloudiness"></a>
-                        </div>
-                        <div class="col-3 col-md-6">
-                            <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" width="100%" alt="humidity"></a>
-                        </div>
-                        <div class="col-3 col-md-6">
-                            <a href="temperature.html"><img src="Resources/assets/images/Fig1.png" width="100%" alt="temperature"></a>
-                        </div>
-                        <div class="col-3 col-md-6">
-                            <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" width="100%" alt="wind speed"></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-6">
+                <h3 class="text-center">vs. Humidity</h3>
+                <a href="humidity.html"><img width="100%" src="Resources/assets/images/Fig2.png"></a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center">vs. Max Temperature </h3>
+                <a href="temperature.html"><img width="100%" src="Resources/assets/images/Fig1.png"></a>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-center">vs. Wind Speed</h3>
+                <a href="windspeed.html"><img width="100%" src="Resources/assets/images/Fig4.png"></a>
             </div>
         </div>
     </div>
+
     <!-- Generating Footer of the html coding-->
     <footer class="page-footer font-small footer-dark">
         <div class="footer-copyright text-center py-3">
         </div>
     </footer>
+
 </body>
 
 </html>

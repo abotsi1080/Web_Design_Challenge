@@ -24,7 +24,8 @@ The goal of this challenge assignement is to use HTML, CSS, and BOOTSTRAP to cre
 ** A Landing page containing the following: **
     - An explanation of the project
     - Links to each visualization
-    -
+    
+    
 ** The links to each visualization page **
     (Note: There must be a sidebar containing preview image of each plot where clicking an image will take the user to the respective visualization)
     - Cloudiness
